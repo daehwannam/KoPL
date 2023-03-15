@@ -70,6 +70,6 @@ We provide you with KoPL[document](https://kopl.xlore.cn/doc/index.html), which 
 # website
 https://kopl.xlore.cn
 
-# Changes from the original project
+# Changes from the [original project](https://github.com/THU-KEG/KoPL)
 - This forked project is translated into English from Chinese via Google Translate.
 - Tab characters used to indent python code are replaced with space characters.
