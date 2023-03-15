@@ -60,12 +60,16 @@ If the test runs successfully, congratulations you have successfully installed.
 
 # quick start
 You can prepare your own knowledge base and use KoPL to implement reasoning question answering. For the format of the knowledge base, please refer to [Knowledge Base](https://kopl.xlore.cn/doc/4_helloworld.html#id1).
-For more simple questions and answers using the KoPL program, please refer to [Simple Questions and Answers](https://kopl.xlore.cn/doc/5_example.html#id2), and for complex questions and answers, please refer to [Complex Questions and Answers](https://kopl. xlore.cn/doc/5_example.html#id8).
+For more simple questions and answers using the KoPL program, please refer to [Simple Questions and Answers](https://kopl.xlore.cn/doc/5_example.html#id2), and for complex questions and answers, please refer to [Complex Questions and Answers](https://kopl.xlore.cn/doc/5_example.html#id8).
 
-You can also use the [Query Service] (https://kopl.xlore.cn/queryService) we provide you to quickly start your KoPL journey.
+You can also use the [Query Service](https://kopl.xlore.cn/queryService) we provide you to quickly start your KoPL journey.
 
 # document
 We provide you with KoPL[document](https://kopl.xlore.cn/doc/index.html), which introduces in detail the knowledge elements of KoPL, the basic functions of KoPL, and the API of KoPL engine.
 
 # website
 https://kopl.xlore.cn
+
+# Changes from the original project
+- This forked project is translated into English from Chinese via Google Translate.
+- Tab characters used to indent python code are replaced with space characters.
