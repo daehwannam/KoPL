@@ -23,12 +23,12 @@ class KB(object):
     def __init__(self, kb):
         self.entities = {}
         for cid in kb['concepts']:
-            self.entities[cid] = kb['concepts'][cid]
+            self.entities[cid] = dict(kb['concepts'][cid])  # modified by dhnam: copy dict object
             self.entities[cid]['relations'] = []
             self.entities[cid]['attributes'] = []
             self.entities[cid]['isA'] = self.entities[cid].pop('subclassOf')
         for eid in kb['entities']:
-            self.entities[eid] = kb['entities'][eid]
+            self.entities[eid] = dict(kb['entities'][eid])  # modified by dhnam: copy dict object
             self.entities[eid]['isA'] = self.entities[eid].pop('instanceOf')
         # some entities may have relations with concepts, we add them into self.entities for visiting convenience
         for eid in kb['entities']:
@@ -154,11 +154,15 @@ class KB(object):
                         self.key_type[qk] = qv['type']
 
             # parse values into ValueClass object
+            ent_info['attributes'] = list(map(dict, ent_info['attributes']))  # modified by dhnam: copy list[dict] object
             for attr_info in ent_info['attributes']:
                 attr_info['value'] = self._parse_value(attr_info['value'])
+                attr_info['qualifiers'] = dict(attr_info['qualifiers'])  # modified by dhnam: copy dict object
                 for qk, qvs in attr_info['qualifiers'].items():
                     attr_info['qualifiers'][qk] = [self._parse_value(qv) for qv in qvs]
+            ent_info['relations'] = list(map(dict, ent_info['relations']))  # modified by dhnam: copy list[dict] object
             for rel_info in ent_info['relations']:
+                rel_info['qualifiers'] = dict(rel_info['qualifiers'])  # modified by dhnam: copy dict object
                 for qk, qvs in rel_info['qualifiers'].items():
                     rel_info['qualifiers'][qk] = [self._parse_value(qv) for qv in qvs]
 
