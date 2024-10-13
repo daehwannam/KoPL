@@ -65,11 +65,11 @@ For more simple questions and answers using the KoPL program, please refer to [S
 You can also use the [Query Service](https://kopl.xlore.cn/queryService) we provide you to quickly start your KoPL journey.
 
 # document
-We provide you with KoPL[document](https://kopl.xlore.cn/doc/index.html), which introduces in detail the knowledge elements of KoPL, the basic functions of KoPL, and the API of KoPL engine.
+We provide you with KoPL [document](https://kopl.xlore.cn/doc/index.html), which introduces in detail the knowledge elements of KoPL, the basic functions of KoPL, and the API of KoPL engine.
 
 # website
 https://kopl.xlore.cn
 
 # Changes from the [original project](https://github.com/THU-KEG/KoPL)
-- This forked project is translated into English from Chinese via Google Translate.
-- Tab characters used to indent python code are replaced with space characters.
+- This forked project was translated into English from Chinese via Google Translate.
+- Tab characters that were used to indent python code were replaced with space characters.
